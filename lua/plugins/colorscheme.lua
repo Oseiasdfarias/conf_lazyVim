@@ -1,11 +1,12 @@
 return {
-  "folke/tokyonight.nvim",
+  { "shaunsingh/nord.nvim" },
   lazy = true,
   priority = 1000,
-  opts = function()
-    return {
-      style = "moon",
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "nord",
       transparent = true,
-    }
-  end,
+    },
+  },
 }
